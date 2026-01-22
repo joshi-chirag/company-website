@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Tulsi Enterprises</title>
+    <meta name="description"
+        content="Contact Tulsi Enterprises for industrial supplies, packaging materials, components and fabrication services." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        header {
+            background: #0f3d2e;
+            color: #fff;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-badge {
+            background: #fff;
+            padding: 4px 6px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 64px;
+            width: 64px;
+        }
+
+        .logo-badge img {
+            height: 135%;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 6px;
+        }
+
+        nav a {
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #eaf5f1;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            transition: all 0.25s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+        }
+
+        nav a.active {
+            background: #ffffff;
+            color: #0f3d2e;
+            font-weight: 600;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 26px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .hero {
+            padding: 70px 30px;
+            background: #f4f7f6;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1,
+        h2 {
+            color: #0f3d2e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #0f3d2e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* ===== Mobile Responsive Navbar ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 16px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 86px;
+                left: 0;
+                right: 0;
+                background: #0f3d2e;
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav.show {
+                display: flex;
+            }
+
+            nav a {
+                padding: 12px 20px;
+                border-radius: 0;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 40px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff;">
+            <div class="logo-badge">
+                <img src="logo.png" alt="Tulsi Enterprises Logo" />
+            </div>
+            <div style="line-height:1.1;">
+                <div style="font-size:20px;font-weight:800;letter-spacing:2px;">TULSI</div>
+                <div style="font-size:12px;letter-spacing:3px;opacity:0.9;">ENTERPRISES</div>
+            </div>
+        </a>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <div class="hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for reliable industrial solutions.</p>
+    </div>
+
+    <section>
+        <div class="grid">
+            <div class="card">
+                <h2>Office Details</h2>
+                <p><strong>Address:</strong><br>
+                    A2-303, SG Shikhar Heights,<br>
+                    Siddharth Vihar, Ghaziabad – 201009, India</p>
+
+                <p><strong>Phone:</strong><br>
+                    +91 95990 99914<br>
+                    +91 96255 57210</p>
+
+                <p><strong>Email:</strong><br>
+                    eja.tulsienterprises@gmail.com</p>
+            </div>
+
+            <div class="card">
+                <h2>Send an Enquiry</h2>
+                <form action="https://formspree.io/f/xeeeldpb" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required />
+                    <input type="text" name="company" placeholder="Company Name" />
+                    <input type="tel" name="phone" placeholder="Phone Number" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                    <textarea name="message" rows="4" placeholder="Your Requirement" required></textarea>
+
+                    <button class="btn" type="submit">Request a Quote</button>
+                </form>
+
+                <p style="font-size:14px;color:#666;">Our team will respond within 24 working hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Tulsi Enterprises. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

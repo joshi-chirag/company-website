@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us – Tulsi Enterprises</title>
+    <meta name="description"
+        content="Learn about Tulsi Enterprises, a trusted B2B partner for industrial supplies, packaging materials, and fabrication services." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        header {
+            background: #0f3d2e;
+            color: #fff;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-badge {
+            background: #fff;
+            padding: 4px 6px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 64px;
+            width: 64px;
+        }
+
+        .logo-badge img {
+            height: 135%;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 6px;
+        }
+
+        nav a {
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #eaf5f1;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            transition: all 0.25s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+        }
+
+        nav a.active {
+            background: #ffffff;
+            color: #0f3d2e;
+            font-weight: 600;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 26px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .hero {
+            padding: 70px 30px;
+            background: #f4f7f6;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1,
+        h2 {
+            color: #0f3d2e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #0f3d2e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        /* ===== Mobile Responsive Navbar ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 16px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 86px;
+                left: 0;
+                right: 0;
+                background: #0f3d2e;
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav.show {
+                display: flex;
+            }
+
+            nav a {
+                padding: 12px 20px;
+                border-radius: 0;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 40px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff;">
+            <div class="logo-badge">
+                <img src="logo.png" alt="Tulsi Enterprises Logo" />
+            </div>
+            <div style="line-height:1.1;">
+                <div style="font-size:20px;font-weight:800;letter-spacing:2px;">TULSI</div>
+                <div style="font-size:12px;letter-spacing:3px;opacity:0.9;">ENTERPRISES</div>
+            </div>
+        </a>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <div class="hero">
+        <h1>About Tulsi Enterprises</h1>
+        <p>Your trusted B2B partner for industrial products and services.</p>
+    </div>
+
+    <section>
+        <h2>Who We Are</h2>
+        <p>Tulsi Enterprises is a growing industrial supply company committed to supporting manufacturers, printers, and
+            industrial units with reliable, high-quality products and services. We operate as a trusted B2B partner,
+            delivering essential components and solutions that keep your operations running smoothly.</p>
+        <p>We are engaged in the trading and supply of packaging materials, printing machine consumables, mechanical,
+            electrical, electronic, and pneumatic components, along with bearings, belts, rollers, motors, sensors, and
+            spare parts. We also provide all types of industrial fabrication jobs.</p>
+    </section>
+
+    <section>
+        <h2>Our Focus</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Quality First</h3>
+                <p>We source dependable products that meet industrial performance standards.</p>
+            </div>
+            <div class="card">
+                <h3>Fair Pricing</h3>
+                <p>Competitive rates with transparent B2B pricing.</p>
+            </div>
+            <div class="card">
+                <h3>Fast Response</h3>
+                <p>Quick communication and timely delivery to avoid downtime.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Solutions</h3>
+                <p>Sourcing and fabrication as per drawings and special requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>Our mission is to build long-term relationships based on trust, performance, and value—so that your business
+            can operate efficiently, without delays or compromises.</p>
+        <a class="btn" href="products.html">Explore Our Products</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Tulsi Enterprises. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
